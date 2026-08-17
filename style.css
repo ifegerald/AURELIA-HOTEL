@@ -1,0 +1,1307 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+section {
+    overflow: hidden;
+}
+
+.page-hero {
+    min-height: 55vh;
+display: flex;
+align-items: center;
+
+background-size: cover;
+background-position: center;
+
+color: white;
+}
+.page-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+}
+.page-hero p {
+    font-size: 1.15rem;
+    max-width: 600px;
+}
+.btn {
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+/* Color Variables */
+:root {
+    --aurelia-dark: #1f2421;
+    --aurelia-gold: #b08d57;
+    --aurelia-cream: #f8f6f1;
+    --aurelia-white: #ffffff;
+}
+.hero {
+    min-height: 80vh;
+display: flex;
+align-items: center;
+
+background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/hero.jpg");
+    height: 520px;
+
+background-size: cover;
+background-position: center;
+
+animation: heroZoom 12s ease-out forwards;
+}
+@keyframes heroZoom {
+from {
+    background-size: 100%;
+}
+
+to {
+    background-size: 120%;
+}
+}
+.hero h1 {
+    font-size: 4rem;
+    color: #f2f0eb;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.hero p {
+    color:  #d8d5ce;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.hero-content {
+    max-width: 450px;
+    margin-top: 3rem;
+}
+.hero .btn {
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    background-color: var(--aurelia-gold);
+    border-color: var(--aurelia-gold);
+}
+.rooms-preview {
+    background-color: var(--aurelia-cream);
+}
+.booking-cta {
+     background-color: var(--aurelia-cream);
+}
+.navbar {
+    background-color: white;
+    padding: 1rem 0;
+}
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav-link {
+    margin-left: 0.5rem;
+}
+.card {
+    border: none;
+    overflow: hidden;
+}
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+.card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+.hero {
+    min-height: 70vh;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+}
+.page-hero {
+    min-height: 40vh;
+display: flex;
+align-items: center;
+
+background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/room-1.jpg");
+    height: 380px; ;
+
+background-size: cover;
+background-position: center;
+
+color: white;
+}
+.room-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.room-features span {
+    background-color: var(--aurelia-cream);
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+}
+.restaurant-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/restaurant.jpg");
+        height:350px;
+}
+.facilities-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/facilities.jpg");
+}
+.facility-feature {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.facility-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+width: 100%;
+
+padding: 2rem;
+
+color: white;
+
+background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.8)
+);
+}
+.facility-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+transition: transform 0.5s ease;
+}
+.facility-feature:hover img {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+.facility-feature {
+    height: 300px;
+}
+}
+.about-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/about.jpg");
+        height: 400px; 
+}
+.gallery-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/gallery-hero.jpg");
+        height: 450px; 
+}
+.gallery-item {
+    height: 350px;
+    overflow: hidden;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+.gallery-item {
+    height: 280px;
+}
+}
+.contact-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/contact.jpg");
+}
+.map-placeholder {
+    min-height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: #e9e6df;
+
+text-align: center;
+}
+.booking-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/booking.jpg");
+        height: 450px;
+}
+.hero-content {
+    max-width: 650px;
+    margin-left: 10%;
+}
+.hero-content h1 {
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+}
+.hero-content p {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.hero-content {
+    max-width: 650px;
+    margin-left: 10%;
+    animation: heroReveal 1.2s ease-out;
+}
+@keyframes heroReveal {
+from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.hero-content .btn {
+    transition: all 0.3s ease;
+}
+.hero-content .btn:hover {
+    transform: translateY(-4px);
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+}
+.hero {
+    overflow: hidden;
+    background-size: 105%;
+    transition: background-size 1s ease;
+}
+/* =========================
+   FACILITIES
+========================= */
+.facilities {
+    background-color: #f7f7f5;
+}
+.facilities-heading {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facilities-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+.facilities-heading p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facility {
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.facility img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+transition: transform 0.6s ease;
+}
+.facility-content {
+    padding: 1.5rem;
+}
+.facility-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+.facility-content p {
+    margin-bottom: 0;
+}
+.facility:hover {
+    transform: translateY(-8px);
+box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.facility:hover img {
+    transform: scale(1.06);
+}
+.facilities-heading {
+    animation: facilityHeadingReveal 1s ease-out;
+}
+@keyframes facilityHeadingReveal {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* =========================
+   ROOMS PREVIEW
+========================= */
+.rooms-preview {
+    background-color: #fff;
+}
+.rooms-heading {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rooms-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+.rooms-heading > p:last-child {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ROOM CARD */
+.room-card {
+    background-color: #f7f7f5;
+    overflow: hidden;
+transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+/* IMAGE */
+.room-image {
+    overflow: hidden;
+}
+.room-image img {
+    width: 100%;
+    height: 320px;
+object-fit: cover;
+
+transition: transform 0.7s ease;
+}
+/* CONTENT */
+.room-content {
+    padding: 2rem;
+}
+.room-category {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+}
+.room-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.room-content p {
+    margin-bottom: 1.5rem;
+}
+/* LINK */
+.room-link {
+    display: inline-block;
+font-weight: 600;
+
+color: inherit;
+
+border-bottom: 1px solid currentColor;
+
+padding-bottom: 3px;
+
+transition:
+    padding-left 0.3s ease,
+    opacity 0.3s ease;
+}
+/* HOVER */
+.room-card:hover {
+    transform: translateY(-8px);
+box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.room-card:hover .room-image img {
+    transform: scale(1.05);
+}
+.room-card:hover .room-link {
+    padding-left: 8px;
+}
+/* =========================
+   DINING
+========================= */
+.dining {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
+.dining-image {
+    overflow: hidden;
+}
+.dining-image img {
+    width: 100%;
+    height: 550px;
+object-fit: cover;
+
+transition: transform 0.8s ease;
+}
+.dining-image:hover img {
+    transform: scale(1.04);
+}
+.dining-content {
+    max-width: 550px;
+}
+.section-label {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.dining-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+.dining-content > p:not(.section-label) {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+/* =========================
+   DINING POLISH
+========================= */
+
+.dining-content {
+    padding-left: 2rem;
+}
+
+.dining-content h2 {
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.dining-content .btn {
+    background-color: var(--aurelia-gold);
+    border-color: var(--aurelia-gold);
+}
+
+.dining-content .btn:hover {
+    background-color: var(--aurelia-dark);
+    border-color: var(--aurelia-dark);
+}
+
+
+/* =========================
+   GUEST EXPERIENCE
+========================= */
+.experience {
+    background-color: #f7f7f5;
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
+.experience-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+}
+.testimonial {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.testimonial-quote {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.testimonial-author {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.testimonial-status {
+    font-size: 0.85rem;
+    opacity: 0.65;
+}
+/* =========================
+   WELCOME
+========================= */
+.welcome {
+    padding-top: 4rem !important;
+    padding-bottom: 7rem !important;
+    background-color:  #f2efe8;
+}
+.welcome-content {
+    max-width: 550px;
+}
+.welcome-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+.welcome-content > p:not(.section-label) {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.welcome-image {
+    overflow: hidden;
+}
+.welcome-image img {
+    width: 100%;
+    height: 550px;
+object-fit: cover;
+
+transition: transform 0.8s ease;
+}
+.welcome-image:hover img {
+    transform: scale(1.04);
+}
+/* =========================
+   BOOKING CTA
+========================= */
+.booking-cta {
+    padding: 8rem 0;
+background-color: #1f1f1f;
+color: #fff;
+}
+.booking-cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.booking-cta .section-label {
+    color: #fff;
+    opacity: 0.7;
+}
+.booking-cta h2 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+}
+.booking-cta p:not(.section-label) {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+.booking-cta .btn {
+    margin-top: 0.5rem;
+}
+
+/* =========================
+   AURELIA NAVBAR
+========================= */
+
+.aurelia-navbar {
+    padding: 1.25rem 0;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+
+/* BRAND */
+
+.aurelia-navbar .navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+    color:#fff;
+}
+
+.aurelia-navbar .navbar-brand span {
+    display: block;
+    margin-top: 5px;
+
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+    opacity: 0.6;
+}
+
+.aurelia-navbar .navbar-brand:hover {
+    color: #fff;
+}
+
+
+/* NAV LINKS */
+
+.aurelia-navbar .nav-link {
+    position: relative;
+
+    margin: 0 0.3rem;
+    padding: 0.6rem 0.65rem !important;
+
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+
+/* UNDERLINE ANIMATION */
+
+.aurelia-navbar .nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0.65rem;
+    right: 0.65rem;
+    bottom: 0;
+
+    height: 1px;
+
+    background-color: #b08d57;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+}
+
+.aurelia-navbar .nav-link:hover {
+    color: #b08d57;
+}
+
+.aurelia-navbar .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* BOOK NOW */
+
+.aurelia-navbar .navbar-book-btn {
+    margin-left: 1rem;
+
+    padding: 0.75rem 1.5rem !important;
+
+    border: 1px solid #b08d57 !important;
+    border-radius: 0 !important;
+
+    background-color: #b08d57 !important;
+    color: #ffffff !important;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.aurelia-navbar .navbar-book-btn:hover {
+    background-color: transparent !important;
+    color: #b08d57 !important;
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO NAVBAR OVERLAY
+========================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.site-header::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 180px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+/* =========================
+   FACILITY POLISH
+========================= */
+
+.facility {
+    cursor: pointer;
+}
+
+.facility-content h3 {
+    transition: transform 0.3s ease;
+}
+
+.facility:hover .facility-content h3 {
+    transform: translateX(5px);
+}
+
+.facility-content p {
+    color: #666;
+}
+
+/* =========================
+   WELCOME POLISH
+========================= */
+
+.welcome-content h2 {
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.welcome-content .btn {
+    background-color: var(--aurelia-gold);
+    border-color: var(--aurelia-gold);
+}
+
+.welcome-content .btn:hover {
+    background-color: var(--aurelia-dark);
+    border-color: var(--aurelia-dark);
+}
+
+.scroll-indicator {
+    margin-top: 4rem;
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    animation: scrollFloat 2s ease-in-out infinite;
+}
+
+@keyframes scrollFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+.inner-navbar {
+    background-color: #f8f6f1;
+}
+
+.inner-navbar .nav-link {
+    color: #1f2421;
+}
+
+.inner-navbar .navbar-brand,
+.inner-navbar .navbar-brand span {
+    color: #1f2421 !important;
+}
+
+/* =========================
+   ROOMS PAGE
+========================= */
+
+/* Room cards */
+
+main > section .card {
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: #f8f6f1;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+main > section .card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+main > section .card-img-top {
+    height: 280px;
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+main > section .card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+main > section .card-body {
+    padding: 2rem;
+}
+
+main > section .card-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+main > section .card-text {
+    color: #555;
+}
+
+
+/* Room features */
+
+.room-features span {
+    display: inline-block;
+
+    background-color: #ffffff;
+    border: 1px solid rgba(176, 141, 87, 0.25);
+
+    padding: 0.4rem 0.7rem;
+
+    font-size: 0.8rem;
+}
+
+
+/* Price */
+
+.card-body strong {
+    font-size: 1.2rem;
+    color: #1f2421;
+}
+
+
+/* Designed Around You */
+
+main > section.bg-light {
+    background-color: #f8f6f1 !important;
+}
+
+main > section.bg-light h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+main > section.bg-light .text-uppercase {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+}
+
+
+/* Amenities list */
+
+main > section.bg-light .list-group-item {
+    padding: 1rem 1.25rem;
+
+    background-color: #ffffff;
+
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ROOM CTA
+========================= */
+
+.booking-cta {
+    padding: 7rem 1rem !important;
+
+    background:
+        linear-gradient(
+            rgba(31, 36, 33, 0.94),
+            rgba(31, 36, 33, 0.94)
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.booking-cta h2 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 0.95;
+
+    margin-bottom: 1.25rem;
+}
+
+.booking-cta p {
+    max-width: 550px;
+    margin: 0 auto 2rem;
+
+    font-size: 1.1rem;
+    opacity: 0.75;
+}
+
+.booking-cta .btn {
+    background-color: #b08d57;
+    border: 1px solid #b08d57;
+
+    color: #ffffff;
+
+    padding: 0.9rem 2rem;
+    font-weight: 600;
+}
+
+.booking-cta .btn:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   RESTAURANT PAGE
+========================= */
+
+.restaurant-intro {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.restaurant-intro h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.restaurant-intro .text-uppercase,
+.menu-section .text-uppercase,
+.dining-experience .text-uppercase {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.restaurant-intro img,
+.dining-experience img {
+    transition: transform 0.7s ease;
+}
+
+.restaurant-intro img:hover,
+.dining-experience img:hover {
+    transform: scale(1.03);
+}
+
+
+/* MENU */
+
+.menu-section {
+    background-color: var(--aurelia-cream);
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.menu-section > .container > .text-center {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-section h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.menu-section .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.menu-section .card img {
+    height: 280px;
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.menu-section .card-body {
+    padding: 1.75rem;
+}
+
+.menu-section .card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.menu-section .card-text {
+    color: #666;
+}
+
+.menu-section .card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.menu-section .card:hover img {
+    transform: scale(1.05);
+}
+
+.menu-section .fw-bold {
+    color: var(--aurelia-gold);
+    font-size: 1.1rem;
+}
+
+
+/* DINING EXPERIENCE */
+
+.dining-experience {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.dining-experience-image {
+    overflow: hidden;
+}
+
+.dining-experience-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+.dining-experience-image:hover img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+
+    .dining-experience-image img {
+        height: 350px;
+    }
+
+}
+
+
+.dining-experience h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.dining-experience .list-group {
+    border-radius: 0;
+}
+
+.dining-experience .list-group-item {
+    padding: 1rem 1.25rem;
+
+    border-left: none;
+    border-right: none;
+
+    background-color: transparent;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .restaurant-intro,
+    .menu-section,
+    .dining-experience {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .menu-section .card img {
+        height: 240px;
+    }
+
+}
+/* =========================
+   RESTAURANT BUTTONS
+========================= */
+
+.restaurant-btn {
+    display: inline-block;
+
+    padding: 0.8rem 1.8rem;
+
+    border: 1px solid var(--aurelia-gold);
+    border-radius: 4px;
+
+    background-color: var(--aurelia-gold);
+    color: #fff;
+
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.restaurant-btn:hover {
+    background-color: transparent;
+    color: var(--aurelia-gold);
+
+    transform: translateY(-3px);
+}
+
+
+/* OUTLINE VERSION */
+
+.restaurant-btn-outline {
+    background-color: transparent;
+    color: var(--aurelia-gold);
+}
+
+.restaurant-btn-outline:hover {
+    background-color: var(--aurelia-gold);
+    color: #fff;
+}
+
+/* =========================
+   FACILITIES PAGE
+========================= */
+
+.facility-feature {
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+}
+
+.facility-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.facility-feature:hover img {
+    transform: scale(1.05);
+}
+
+.facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 2.5rem;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.85)
+    );
+}
+
+.facility-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.facility-overlay p {
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+
+/* ADDITIONAL SERVICES */
+
+.services-feature {
+    height: 100%;
+    padding: 2rem 1.5rem;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.services-feature:hover {
+    transform: translateY(-5px);
+    border-color: var(--aurelia-gold);
+}
+
+.services-feature h3 {
+    margin-bottom: 0.75rem;
+}
+
+.services-feature p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .facility-feature {
+        height: 320px;
+    }
+
+    .facility-overlay {
+        padding: 1.5rem;
+    }
+
+    .facility-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+}
